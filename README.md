@@ -1,8 +1,10 @@
 # UAV_assisted_VN_Sim
-Discrete event simulator for UAV assisted Vehicular network Scenario 
-In this project we simulate a scenario of a Highway segment where there is a stream of vehicle traffic flowing on it and these vehicles have a single packet to transmit to a destination RSU.
-The vehicles arrival follows a poisson process.
-The vehciles form clusters while traveling along the highway. 
-A flow of UAVs is dispatched over the following highway to help establish a full link to the destination RSU.
-Once a link is established the packets are sent to the destination RSU.
-This project is build using the Simpy library in Python.
+This project is build using the Simpy library in Python.<br>
+Discrete event simulator for UAV assisted Vehicular network Scenario.<br>
+In this project we simulate a highway segment that have a vehicular traffic flow that form a part of a vehicular network, every vehicle have a packet to transmit to a destination RoadSide Unit (RSU).<br>
+A flow of UAVs is added to the vehicular flow to form additional node for the multi-hop path between source and destination RSU. Once a path is established the available packets are sent to the destination RSU.<br>
+The average packet delay and end-to-end path availability is calculated at the end of each simulation run. <br>
+The vehicules arrivals and UAVs follows a poisson arrival process. <br>
+This is the first version of this simulator, further improvement will be applied and followed by a patch note to explain the changes done.<br>
+
+
